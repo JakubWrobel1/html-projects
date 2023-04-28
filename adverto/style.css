@@ -5,12 +5,13 @@
 }
 
 body{
-    background-color: #11111F;
+    height: 100vh;
+    background: linear-gradient(115deg, rgba(17,17,31,1) 54%, rgba(60,60,61,1) 100%);
 }
 header{
     display: flex;
     box-sizing: border-box;
-    background-color: #11111F;
+    background-color: inherit;
     position: relative;
     padding: 10px;
     
@@ -38,7 +39,7 @@ header{
 .nav{
     display: flex;
     justify-content: center;
-    background-color: #11111F;
+    background-color: inherit;
     color: white;
 }
 ul {
@@ -110,10 +111,13 @@ li a:hover {
     display: flex;
     box-sizing: border-box;
     margin: 10px;
+    margin-bottom: 30vh;
     height: 20vh;
     width: 40vw;
     background-color: white;
 }
 footer{
+    
     color: white;
+    background-color: inherit;
 }
