@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div  id="login" class="login-container">
+            <h2>Rejestracja</h2>
+            <form class="field-control">
+                <label for="username">Nazwa użytkownika</label>
+                <input type="text" id="username" placeholder="wpisz nazwę użytkownika">
+            </form>
+            <form class="field-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="wpisz swój email">
+            </form>
+            <form class="field-control">
+                <label for="password">Hasło</label>
+                <input type="password" id="password" placeholder="wpisz hasło">
+            </form>
+            <form class="field-control">
+                <label for="password2">Powtórz hasło</label>
+                <input type="password2" id="password2" placeholder="wpisz hasło ponownie">
+            </form>
+            <form>
+                <input type="submit"class="register-button" value="Zarejestruj się">
+            </form>
+            <form action="/adverto/login/login.html">
+                <input type="submit" class="login" value="Zaloguj się">
+            </form>
+           <form action="/adverto/index.html">
+            <input type="submit" class="back" value="Strona główna">
+           </form>            
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

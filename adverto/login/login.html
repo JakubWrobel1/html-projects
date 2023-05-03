@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div  id="login" class="login-container">
+            <h2>Logowanie</h2>
+            <form class="field-control">
+                <label for="username">Nazwa użytkownika</label>
+                <input type="text" id="username" placeholder="wpisz nazwę użytkownika">
+            </form>
+            <form class="field-control">
+                <label for="password">Hasło</label>
+                <input type="password" id="password" placeholder="wpisz hasło">
+            </form>
+            <form action="/adverto/register/register.html">
+                <input type="submit"class="register-button" value="Zarejestruj się">
+            </form>
+            <form>
+                <input type="submit" class="login" value="Zaloguj się">
+            </form>
+           <form action="/adverto/index.html">
+            <input type="submit" class="back" value="Strona główna">
+           </form>            
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
