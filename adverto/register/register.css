@@ -34,7 +34,7 @@ h2{
     text-align: center;
     margin-bottom: 20px;
 }
-.login-container{
+.register-container{
     padding: 25px 35px;
 }
 .field-control{
@@ -59,7 +59,7 @@ h2{
 .field-control input::placeholder{
     color: var(--color-form);
 }
-.login-container 
+.register-container 
 .register-button, 
 .back , 
 .login{
