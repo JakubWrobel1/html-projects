@@ -1,13 +1,5 @@
-class Search{
-    constructor(){
-        this.messageButton = document.querySelector("#search")
-        this.init()
-    }
-    init(){
-        this.search()
-    }
-    search = ()=>{
-        this.messageButton.addEventListener('click', ()=>console.log('Test'))
-    }
+let search = document.querySelector('.search-box');
+
+document.querySelector('#search-icon').onclick = () => {
+    search.classList.toggle('active');
 }
-const search = new Search()
