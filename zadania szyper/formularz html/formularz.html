@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container"> 
+        <form action="script.php" autocomplete="on" method="post">
+        <h2>Utwórz konto</h2>
+        <fieldset>
+            <legend>Twoje dane:</legend>
+           
+                <label for="name">Imię lub nick</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="np. Jan"  
+                    minlength="3" 
+                    maxlength="20" 
+                    size="12" 
+                    required 
+                    autofocus><br>
+
+                <label for="password">Hasło</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="np. $@K7ncV-"
+                    minlength="8"
+                    required><br>
+
+                <label for="password2">Powtórz hasło</label>
+                <input 
+                    type="password" 
+                    id="password2"
+                    minlength="8"
+                    required><br>
+
+                <label for="phone">Numer telefonu komórkowego</label>
+                <input 
+                    type="tel" 
+                    id="phone"
+                    pattern="[0-9]{3}[ -]?[0-9]{3}[ -]?[0-9]{3}"
+                    title="wprowadź 9 cyfer"
+                    required><br>
+                    
+                <label for="birth-date">Data urodzenia</label>
+                <input 
+                    type="date" 
+                    id="birth-date"
+                    min="1918-11-11"><br>
+
+                <label>Płeć:</label>
+                <input 
+                    type="radio" 
+                    name="gender"
+                    id="female"
+                    checked>
+                <label for="female">Kobieta</label>
+            
+                <input 
+                    type="radio"
+                    name="gender"
+                    id="male">
+                <label for="male">Mężczyzna</label><br>
+
+                <label for="file-field">Twój awatar:</label>
+                <input 
+                    type="file" 
+                    id="file-field"
+                    accept="image/*">
+           
+        </fieldset>
+        <fieldset>
+            <legend>Zainteresowania i umiejętności</legend>
+
+            <label>Sport:</label>
+                <label></label>
+                <input 
+                    type="checkbox" 
+                    id="football"
+                    value="football">
+                <label for="football">Piłka nożna</label>
+                <input 
+                    type="checkbox" 
+                    id="handball"
+                    value="handball"> 
+                <label for="handball">Szczypiorniak</label>
+                <input 
+                    type="checkbox" 
+                    id="speedway"
+                    value="Speedway">
+                <label for="speedway">Żużel </label><br>
+                
+            <label for="skills">Umiejętności IT</label><br>
+            <select name="skills" id="skills"  size="5" multiple>
+                <optgroup label="Systemy operacyjne">
+                    <option value="windows" selected>Windows</option>
+                    <option value="linux" selected>Linux</option>
+                    <option value="macos">MacOS</option>
+                </optgroup>
+                <optgroup label="Oprogramowanie biurowe">
+                    <option value="word">Word</option>
+                    <option value="excel">Excel</option>
+                    <option value="powerpoint">PowerPoint</option>
+                </optgroup>
+            </select><br>
+
+            <label for="favorite-color">Ulubiony kolor</label>
+            <input 
+                type="color" 
+                id="favorite-color"
+                value="#000000"><br>
+
+            <label for="monday-hate">Jak bardzo nie lubisz poniedziałków?</label><br>
+            <input 
+                type="range" 
+                id="monday-hate"
+                min="0"
+                max="10"
+                step="1"
+                value="0"><br>
+            
+            <label for="others">Kilka słów o twoich pozostałych zainteresowaniach</label>
+            <textarea 
+                id="others" 
+                cols="50" 
+                rows="4"
+            ></textarea><br>
+        </fieldset>
+        <button type="submit">Zapisz</button>
+        <button type="reset">Wypełnij ponownie formularz</button>
+    </form>
+    </div>
+</body>
+</html>
